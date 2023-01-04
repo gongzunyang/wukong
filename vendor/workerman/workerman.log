@@ -1,0 +1,75 @@
+2021-04-21 16:22:37 pid:1 Worker process terminated
+2021-04-21 16:26:15 pid:1 Worker process terminated
+2021-04-21 16:30:28 pid:1 Worker process terminated
+2021-04-21 16:36:33 pid:1 think\exception\ErrorException: Undefined index: server_protocol in D:\phpstudy_pro\WWW\72crm-php\application\push\Controller\Worker.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\72crm-php\application\push\Controller\Worker.php(62): think\Error::appError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 62, Array)
+#1 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(2393): app\push\controller\Worker->onWorkerStart(Object(Workerman\Worker))
+#2 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1404): Workerman\Worker->run()
+#3 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#4 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#5 D:\phpstudy_pro\WWW\72crm-php\vendor\topthink\think-worker\src\Server.php(56): Workerman\Worker::runAll()
+#6 [internal function]: think\worker\Server->start()
+#7 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(343): ReflectionMethod->invokeArgs(Object(app\push\controller\Worker), Array)
+#8 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(611): think\App::invokeMethod(Array, Array)
+#9 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#10 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#11 D:\phpstudy_pro\WWW\72crm-php\thinkphp\start.php(19): think\App::run()
+#12 D:\phpstudy_pro\WWW\72crm-php\server.php(6): require('D:\\phpstudy_pro...')
+#13 {main}
+2021-04-21 16:36:34 pid:1 Worker process terminated
+2021-04-21 16:37:40 pid:1 think\exception\ErrorException: curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead in D:\phpstudy_pro\WWW\72crm-php\application\common.php:1685
+Stack trace:
+#0 [internal function]: think\Error::appError(8, 'curl_setopt(): ...', 'D:\\phpstudy_pro...', 1685, Array)
+#1 D:\phpstudy_pro\WWW\72crm-php\application\common.php(1685): curl_setopt(Resource id #117, 81, 1)
+#2 D:\phpstudy_pro\WWW\72crm-php\application\push\Controller\Worker.php(62): curl_post('http://www.72-c...')
+#3 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(2393): app\push\controller\Worker->onWorkerStart(Object(Workerman\Worker))
+#4 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1404): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#6 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#7 D:\phpstudy_pro\WWW\72crm-php\vendor\topthink\think-worker\src\Server.php(56): Workerman\Worker::runAll()
+#8 [internal function]: think\worker\Server->start()
+#9 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(343): ReflectionMethod->invokeArgs(Object(app\push\controller\Worker), Array)
+#10 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(611): think\App::invokeMethod(Array, Array)
+#11 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#12 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#13 D:\phpstudy_pro\WWW\72crm-php\thinkphp\start.php(19): think\App::run()
+#14 D:\phpstudy_pro\WWW\72crm-php\server.php(6): require('D:\\phpstudy_pro...')
+#15 {main}
+2021-04-21 16:37:41 pid:1 Worker process terminated
+2021-04-21 16:39:06 pid:1 think\exception\ErrorException: curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead in D:\phpstudy_pro\WWW\72crm-php\application\common.php:1685
+Stack trace:
+#0 [internal function]: think\Error::appError(8, 'curl_setopt(): ...', 'D:\\phpstudy_pro...', 1685, Array)
+#1 D:\phpstudy_pro\WWW\72crm-php\application\common.php(1685): curl_setopt(Resource id #117, 81, 1)
+#2 D:\phpstudy_pro\WWW\72crm-php\application\push\Controller\Worker.php(62): curl_post('https://www.bai...')
+#3 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(2393): app\push\controller\Worker->onWorkerStart(Object(Workerman\Worker))
+#4 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1404): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#6 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#7 D:\phpstudy_pro\WWW\72crm-php\vendor\topthink\think-worker\src\Server.php(56): Workerman\Worker::runAll()
+#8 [internal function]: think\worker\Server->start()
+#9 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(343): ReflectionMethod->invokeArgs(Object(app\push\controller\Worker), Array)
+#10 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(611): think\App::invokeMethod(Array, Array)
+#11 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#12 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#13 D:\phpstudy_pro\WWW\72crm-php\thinkphp\start.php(19): think\App::run()
+#14 D:\phpstudy_pro\WWW\72crm-php\server.php(6): require('D:\\phpstudy_pro...')
+#15 {main}
+2021-04-21 16:39:07 pid:1 Worker process terminated
+2021-05-14 10:49:08 pid:1 think\exception\ErrorException: call_user_func() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php:2393
+Stack trace:
+#0 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(2393): think\Error::appError(2, 'call_user_func(...', 'D:\\phpstudy_pro...', 2393, Array)
+#1 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1404): Workerman\Worker->run()
+#2 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#3 D:\phpstudy_pro\WWW\72crm-php\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#4 D:\phpstudy_pro\WWW\72crm-php\application\common\command\TestCommand.php(47): Workerman\Worker::runAll()
+#5 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\console\Command.php(175): app\common\command\TestCommand->execute(Object(think\console\Input), Object(think\console\Output))
+#6 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\Console.php(674): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#7 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\Console.php(242): think\Console->doRunCommand(Object(app\common\command\TestCommand), Object(think\console\Input), Object(think\console\Output))
+#8 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\Console.php(185): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#9 D:\phpstudy_pro\WWW\72crm-php\thinkphp\library\think\Console.php(145): think\Console->run()
+#10 D:\phpstudy_pro\WWW\72crm-php\thinkphp\console.php(20): think\Console::init()
+#11 D:\phpstudy_pro\WWW\72crm-php\think(17): require('D:\\phpstudy_pro...')
+#12 {main}
+2021-05-14 10:49:09 pid:1 Worker process terminated
+2021-06-03 14:25:17 pid:1 Worker process terminated
